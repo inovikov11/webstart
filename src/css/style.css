@@ -15,7 +15,7 @@ img {
 @media (max-width: 1200px) {
   .container {
     max-width: 1140px;
-    width: 95%;
+    width: 90%;
   }
 }
 
@@ -93,6 +93,134 @@ img {
   .navbar .container {
     max-width: 280px;
     width: 95%;
+  }
+}
+
+.hero {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.hero-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero-text {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+.hero-text__title {
+  font-size: 41px;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+
+.hero-text__subtitle {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+.hero-list {
+  font-size: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.hero-list__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ffd200;
+}
+
+.hero-list__text {
+  max-width: 300px;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-text {
+    padding-right: 30px;
+  }
+  .hero-text__title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .hero-text__subtitle {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .hero-list__item {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .hero-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-text__title {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-text {
+    padding-right: 0;
+  }
+  .hero-text__title {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .hero-text__subtitle {
+    margin-bottom: 25px;
+  }
+  .hero-list__item {
+    margin-bottom: 20px;
+  }
+  .hero-list {
+    font-size: 12px;
+  }
+  .hero-list__image {
+    margin-right: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
