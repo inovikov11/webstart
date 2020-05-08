@@ -1,5 +1,22 @@
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/MuseoSansCyrl-700.eot");
+  src: local("../fonts/MuseoSansCyrl-700"), url("../fonts/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-700.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/MuseoSansCyrl-300.eot");
+  src: local("../fonts/MuseoSansCyrl-300"), url("../fonts/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-300.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
   color: #333333;
 }
 
@@ -25,6 +42,7 @@ img {
   padding: 18px 30px;
   font-size: 13px;
   border: none;
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -67,6 +85,11 @@ img {
 
 .navbar__address {
   font-size: 13px;
+}
+
+.navbar__phone {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .navbar__contacts a {
@@ -116,6 +139,8 @@ img {
 }
 
 .hero-text__title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
   font-size: 41px;
   color: #333333;
   margin: 0;
@@ -125,6 +150,8 @@ img {
 }
 
 .hero-text__subtitle {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
   display: inline-block;
   font-size: 20px;
   font-weight: bold;
