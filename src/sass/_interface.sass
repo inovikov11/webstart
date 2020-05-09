@@ -1,3 +1,6 @@
+*
+  box-sizing: border-box
+  
 body
   @include reg
   color: $text-color
@@ -20,4 +23,28 @@ img
   padding: 18px 30px
   font-size: 13px
   border: none
+  transition: 0.2s
   +bold
+  &:hover
+    background-color: darken($main-color, 10%)
+
+.section
+  &-title
+    +bold
+    font-size: 24px
+  &-subtitle
+    font-size: 16px
+
+.input
+  padding: 20px 26px
+  border-radius: 10px
+  border: 1px solid #dddddd
+  font-size: 15px
+  transition: 0.2s
+  &:hover
+    box-shadow: 0 0 5px 0 $main-color
+  &:focus
+    outline: none
+    border-color: $main-color
+
+  
