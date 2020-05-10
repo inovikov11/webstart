@@ -462,4 +462,32 @@ img {
   top: 0;
   right: 0;
 }
+
+body {
+  position: relative;
+}
+
+.up-arrow {
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 20px;
+  right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.up-arrow img {
+  width: 50%;
+  height: 50%;
+}
 /*# sourceMappingURL=style.css.map */
