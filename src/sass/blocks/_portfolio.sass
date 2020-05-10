@@ -1,0 +1,26 @@
+.portfolio
+  background: $background-color url("/src/img/portfolio/bg-portfolio.jpg") repeat-y center left
+  background-size: 50%
+  padding-top: 100px
+  padding-bottom: 90px
+  &__title
+    margin: 0
+    margin-bottom: 100px
+
+.owl-nav
+  margin: auto
+  margin-top: 65px
+  display: flex
+  justify-content: space-between
+  max-width: 120px
+  & button
+    outline: none
+
+@media (max-width: 768px)
+  .portfolio
+    padding: 35px 0 50px
+    background-size: 0
+    &__title
+      margin-bottom: 40px
+  .owl-nav
+    margin-top: 40px
