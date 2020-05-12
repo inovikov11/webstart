@@ -37,4 +37,28 @@ $(function(){
         }
     }
   });
+  //Воспроизводим анимацию при прокрутке
+
+  $getOffset = function($obj) {
+    $objTop = $($obj).offset();
+    $top = $objTop.top;
+    return $top;
+  }
+
+  $getTop = function($obj) {
+    return $getOffset($obj) - $( window ).height();
+  }
+
+  $scrollToAnimate = function($obj, $animateObj = $obj) {
+    if ($('body,html').scrollTop() >= $getTop($obj)) {
+      $($animateObj).css("animation-play-state", "running");
+    }
+  }
+  
+  $( window ).scroll(function() {
+    $scrollToAnimate('.owl-carousel', '.owl-nav');
+    $scrollToAnimate('.cards', '.card');
+    
+    console.log($('body,html').scrollTop());
+  });
 });
