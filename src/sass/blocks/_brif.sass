@@ -1,0 +1,124 @@
+.brif
+  padding-top: 100px
+  padding-bottom: 90px
+  position: relative
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 50%
+    background-color: #ffc000
+    z-index: -1
+  &::after
+    content: ""
+    position: absolute
+    top: 0
+    right: 0
+    height: 100%
+    width: 50%
+    background: url("/src/img/brif/brif-bg.jpg") no-repeat
+    background-size: cover
+    z-index: -1
+  &-block
+    display: flex
+    justify-content: space-between
+  &-title
+    margin: 0
+    margin-bottom: 50px
+    font-size: 22px
+    line-height: 33px
+    +bold
+  &-subtitle
+    font-size: 16px
+    display: block
+  &__form
+    flex-basis: 50%
+    text-align: center
+    max-width: 370px
+  &-form
+    &__input
+      width: 100%
+      margin-bottom: 15px
+    &__button
+      margin-top: 15px
+      margin-bottom: 30px
+      font-size: 16px
+      padding: 25px
+      width: 100%
+    &__recall
+      display: block
+      font-size: 15px
+
+.questions
+  flex-basis: 50%
+  &-list
+    list-style: none
+    padding: 0
+    +bold
+    &__item
+      display: flex
+      align-items: center
+      margin-bottom: 25px
+    &__counter
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 35px
+      height: 35px
+      border: 2px solid $text-color
+      border-radius: 50%
+      margin-right: 30px
+    &__question
+      font-size: 18px
+      max-width: 385px
+  &__title
+    max-width: 520px
+  &__subtitle
+    margin-bottom: 90px
+
+.form
+  &__title
+    max-width: 350px
+    margin: 0 auto 50px
+  &__subtitle
+    margin-bottom: 45px
+
+@media ( max-width: 960px )
+  .brif
+    padding-top: 0
+    &__form
+      margin-top: 100px
+    &-block
+      flex-direction: column
+      align-items: center
+    &::before
+      width: 100%
+      height: 45%
+      top: 0
+    &::after
+      width: 100%
+      height: 55%
+      top: 45%
+    &__title
+      padding-top: 45px
+      font-size: 18px
+    &__subtitle
+      font-size: 14px
+  
+  .questions
+    padding-top: 45px
+    flex-basis: 100%
+    &-list
+      &__question
+        font-size: 14px
+        max-width: 240px
+      &__item
+        margin-bottom: 25px
+      &__counter
+        margin-right: 10px
+    &__title
+      margin-bottom: 15px
+    &__subtitle
+      margin-bottom: 35px
