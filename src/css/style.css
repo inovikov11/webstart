@@ -1013,6 +1013,31 @@ img {
   margin-bottom: 45px;
 }
 
+.invalid {
+  border: 1px solid red;
+}
+
+.invalid:hover {
+  -webkit-box-shadow: 0 0 5px 0 red;
+          box-shadow: 0 0 5px 0 red;
+}
+
+.invalid:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#username-error, #phone-error {
+  border: none;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+#username-error:hover, #phone-error:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 @media (max-width: 960px) {
   .brif {
     padding-top: 0;

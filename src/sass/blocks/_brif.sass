@@ -85,6 +85,20 @@
   &__subtitle
     margin-bottom: 45px
 
+.invalid
+  border: 1px solid red
+  &:hover
+    box-shadow: 0 0 5px 0 red
+  &:focus
+    box-shadow: none
+
+#username-error, #phone-error
+  border: none
+  padding-bottom: 15px
+  text-align: center
+  &:hover
+    box-shadow: none
+
 @media ( max-width: 960px )
   .brif
     padding-top: 0

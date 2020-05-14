@@ -58,9 +58,9 @@
           <h2 class="offer__title section-title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
           <span class="offer__subtitle section-subtitle">Оставьте заявку на разработку бесплатного дизайн проекта!</span>
           <div class="offer-form">
-            <form action="post">
-              <input class="input offer__input" type="text" placeholder="Ваше имя">
-              <input class="input offer__input" type="tel" placeholder="Ваш телефон">
+            <form action="#" id="offer_form">
+              <input class="input offer__input" name="username" type="text" placeholder="Ваше имя">
+              <input class="input offer__input phone" name="phone" type="tel" placeholder="Ваш телефон">
               <button class="button offer__button">Получить бесплатный дизайн-проект</button>
             </form>
             <div class="offer-recall">
@@ -189,9 +189,9 @@
           <div class="brif__form">
             <h2 class="form__title brif-title">Оставьте заявку на бесплатный  расчет ремонта по телефону</h2>
             <span class="form__subtitle brif-subtitle">Для этого заполните форму ниже</span>
-            <form action="post" class="brif-form">
-              <input class="input brif-form__input" type="text" placeholder="Ваше имя">
-              <input class="input brif-form__input" type="tel" placeholder="Ваш телефон">
+            <form action="#" class="brif-form"  id="brif_form">
+              <input class="input brif-form__input" name="username" type="text" placeholder="Ваше имя">
+              <input class="input brif-form__input phone" name="phone" type="tel" placeholder="Ваш телефон">
               <button class="button brif-form__button">Рассчитать стоимость</button>
             </form>
             <span class="brif-form__recall">Мы перезвоним Вам в течение 60 секунд</span>
@@ -207,8 +207,11 @@
     </div>
   </div>
   <div class="up-arrow" id="arrow"><img src="../src/img/arrow.png"></div>
-  <script src="../src/js/jquery-3.5.1.min.js"></script>
-  <script src="../src/js/owl.carousel.min.js"></script>
-  <script src="../src/js/main.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
 </html>

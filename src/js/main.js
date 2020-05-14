@@ -61,4 +61,31 @@ $(function(){
     
     console.log($('body,html').scrollTop());
   });
+
+  //Валидация форм
+  $('#brif_form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      username: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      phone: "required"
+    },
+    messages: {
+      username: {
+        required: "Заполните поле",
+        minlength: jQuery.validator.format("Пожалуйста, введите минимум 2 буквы"),
+        maxlength: jQuery.validator.format("Максимум 15 символов")
+      },
+      phone: {
+        required: "Заполните поле"
+      }
+    }
+  });
+
+  //Маска для телефона
+  $(".phone").mask("+7 (999) 999-99-99");
 });
