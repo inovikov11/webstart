@@ -550,6 +550,7 @@ img {
   .offer__subtitle {
     font-size: 14px;
     margin-bottom: 25px;
+    text-align: left;
   }
   .offer__input {
     margin-bottom: 10px;
@@ -1091,6 +1092,124 @@ img {
   }
   .questions__subtitle {
     margin-bottom: 35px;
+  }
+}
+
+.footer {
+  position: relative;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts-block {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 215px;
+}
+
+.contacts__title {
+  font-size: 22px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  margin: 0;
+  max-width: 300px;
+  padding: 95px 0;
+}
+
+.contacts-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 4px;
+  margin-right: 25px;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.contacts-list__text {
+  max-width: 145px;
+}
+
+.contacts-list__phone {
+  text-decoration: none;
+  color: #333333;
+}
+
+.firstline {
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+}
+
+.map {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 1200px) {
+  .map {
+    position: relative;
+    width: 100%;
+  }
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacts-block {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-left: 0;
+    padding-bottom: 40px;
+  }
+  .contacts__title {
+    padding: 65px 0 35px;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
 }
 

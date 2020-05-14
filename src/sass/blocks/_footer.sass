@@ -1,0 +1,68 @@
+.footer
+  position: relative
+
+.contacts
+  display: flex
+  justify-content: flex-end
+  &-block
+    flex-basis: 50%
+    padding-left: 215px
+  &__title
+    font-size: 22px
+    +bold
+    margin: 0
+    max-width: 300px
+    padding: 95px 0
+  &-list
+    list-style: none
+    padding: 0
+    &__icon
+      width: 20px
+      height: 20px
+      line-height: 20px
+      text-align: center
+      margin-top: 4px
+      margin-right: 25px
+    &__item
+      display: flex
+      +bold
+      margin-bottom: 35px
+    &__text
+      max-width: 145px
+    &__phone
+      text-decoration: none
+      color: $text-color
+
+.firstline
+  display: block
+  margin-bottom: 10px
+  +reg
+  
+  
+.map 
+  position: absolute
+  width: 50%
+  top: 0
+  left: 0
+
+@media ( max-width: 1200px )
+  .map
+    position: relative
+    width: 100%
+  .contacts
+    display: flex
+    justify-content: center
+    &-block
+      flex-basis: 100%
+      padding-left: 0
+      padding-bottom: 40px
+    &__title
+      padding: 65px 0 35px
+  .footer
+    display: flex
+    flex-direction: column
+    &-container
+      display: flex
+      justify-content: center
+      order: -1
+  
