@@ -441,7 +441,7 @@ img {
   display: flex;
   padding: 85px 0;
   position: relative;
-  background: url("/src/img/offer/offer-bg.jpg") no-repeat center right;
+  background: url("../img/offer/offer-bg.jpg") no-repeat center right;
 }
 
 .offer::before {
@@ -572,7 +572,7 @@ img {
 }
 
 .portfolio {
-  background: #f5f5f5 url("/src/img/portfolio/bg-portfolio.jpg") repeat-y center left;
+  background: #f5f5f5 url("../img/portfolio/bg-portfolio.jpg") repeat-y center left;
   background-size: 50%;
   padding-top: 100px;
   padding-bottom: 90px;
@@ -800,7 +800,7 @@ img {
   position: absolute;
   top: -20px;
   left: 165px;
-  content: url("/src/img/steps/arrow.png");
+  content: url("../img/steps/arrow.png");
   width: 72px;
   height: 25px;
 }
@@ -899,7 +899,7 @@ img {
   right: 0;
   height: 100%;
   width: 50%;
-  background: url("/src/img/brif/brif-bg.jpg") no-repeat;
+  background: url("../img/brif/brif-bg.jpg") no-repeat;
   background-size: cover;
   z-index: -1;
 }
